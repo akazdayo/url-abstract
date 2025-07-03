@@ -16,6 +16,7 @@
 		"tailwindcss": "^4.1.11"
 	},
 	"devDependencies": {
+		"@anthropic-ai/claude-code": "^1.0.41",
 		"@biomejs/biome": "2.0.6",
 		"wrangler": "^4.23.0"
 	}
