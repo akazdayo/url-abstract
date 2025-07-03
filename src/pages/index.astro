@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
 import { ApiKeyChecker } from "../components/ApiKeyChecker";
+import GeminiRequest from "../components/GeminiRequest";
 ---
 
 <html lang="ja">
@@ -51,6 +52,7 @@ import { ApiKeyChecker } from "../components/ApiKeyChecker";
 						</button>
 					</form>
 				</div>
+				<GeminiRequest client:load />
 
 				<div class="text-center mt-6">
 					<a

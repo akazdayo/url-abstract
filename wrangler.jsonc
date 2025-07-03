@@ -1,15 +1,23 @@
 {
-	"$schema": "node_modules/wrangler/config-schema.json",
-	"name": "url-abstract",
-	"main": "./dist/_worker.js/index.js",
-	// Update to today's date
-	"compatibility_date": "2025-07-03",
-	"compatibility_flags": ["nodejs_compat"],
-	"assets": {
-		"binding": "ASSETS",
-		"directory": "./dist"
-	},
-	"observability": {
-		"enabled": true
-	}
+    "$schema": "node_modules/wrangler/config-schema.json",
+    "name": "url-abstract",
+    "main": "./dist/_worker.js/index.js",
+    // Update to today's date
+    "compatibility_date": "2025-07-03",
+    "compatibility_flags": [
+        "nodejs_compat"
+    ],
+    "assets": {
+        "binding": "ASSETS",
+        "directory": "./dist"
+    },
+    "observability": {
+        "enabled": true
+    },
+    "kv_namespaces": [
+        {
+            "binding": "url_abstract",
+            "id": "${KV_NAMESPACE_ID}"
+        }
+    ]
 }
